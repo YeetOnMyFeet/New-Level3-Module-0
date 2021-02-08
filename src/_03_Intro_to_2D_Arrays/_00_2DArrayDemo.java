@@ -29,7 +29,9 @@ public class _00_2DArrayDemo {
         /*
          * Declaring and initializing the values of a 2D array
          */
-        int[][] newArray2d = {{1,2,3}, {4, 5, 6}, {7, 8, 9}};
+        int[][] newArray2d = {{1,2,3}, 
+        					 {4, 5, 6}, 
+        					 {7, 8, 9}};
 
         /*
          * Declaring and initializing the size of the 2D array
