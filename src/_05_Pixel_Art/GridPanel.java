@@ -60,6 +60,15 @@ for (int i = 0; i < pixelarray.length; i++) {
         // 4. Iterate through the array.
         //    For every pixel in the list, fill in a rectangle using the pixel's color.
         //    Then, use drawRect to add a grid pattern to your display.
-
+    	for (int i = 0; i < pixelarray.length; i++) {
+    		for (int j = 0; j < pixelarray[i].length; j++) {
+    			g.setColor(pixelarray[i][j].color);
+    			g.fillRect(	pixelarray[i][j].x*pixelWidth, 	pixelarray[i][j].y*pixelHeight, pixelWidth, pixelHeight);
+    			g.setColor(Color.BLACK);
+    			g.drawRect(	pixelarray[i][j].x*pixelWidth, 	pixelarray[i][j].y*pixelHeight, pixelWidth, pixelHeight);
+    			
+    			
+    		}
+    	}
     }
 }
